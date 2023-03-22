@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+ <style>
+    .divone{
+        width: 400px;
+        height: 300px;
+        background-image: linear-gradient( blue 60%, pink 100%);
+        z-index: 222;
+    }
+
+    .results{
+        background-color: white;
+        width: 120px;
+        height:30px;
+    }
+    #showGrade{
+         background-color: white; 
+         width: 150px !important;
+         height: 40px !important;
+         border-radius: 20px;
+         border: 2px solid whitesmoke;
+    }
+    input, button{
+        height: 60px !important;
+        border-radius: 10px;
+    }
+    button{
+        background-color: green;
+        color: white;
+    }
+    body{
+        overflow-x: hidden;
+        /* background-image:linear-gradient(to top left, blue,blue,pink,pink,); */
+        background-image: linear-gradient( blue 60%, pink 100%);
+    }
+     #one10{
+        width: 100px;
+    background-color: wheat;
+    height: 100px;
+    border-radius: 50%;
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+   
+   animation-name: one10;
+   animation-duration: 15s;
+   z-index: 1;
+  
+
+    }
+   
+   #one11{
+        width: 100px;
+    background-color: coral;
+    height: 100px;
+    border-radius: 50%;
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+   
+   animation-name: one11;
+   animation-duration: 15s;
+   z-index: 1;
+
+    }
+    @keyframes one11 {
+    from{
+        transform: translatey(100px);
+       }
+       to{
+        transform: translatey(-400px);
+       }
+}
+   #one2{
+        width: 100px;
+    background-color: red;
+    height: 100px;
+    border-radius: 50%;
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+   
+   animation-name: one2;
+   animation-duration: 6s;
+   z-index: 1;
+
+    }
+    @keyframes one2 {
+    from{
+        transform: translatey(100px);
+       }
+       to{
+        transform: translatey(-550px);
+       }
+}
+   #one3{
+        width: 100px;
+    background-color: yellow;
+    height: 100px;
+   
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+   
+   animation-name: one3;
+   animation-duration: 14s;
+   margin-left: 100px;
+ 
+
+    }
+    @keyframes one3 {
+    from{
+        transform: translatey(0px);
+       }
+       to{
+        transform: translatey(-790px);
+       }
+}
+   /* #one4{
+        width: 100px;
+    background-color: green;
+    height: 100px;
+    border-radius: 50%;
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+   
+   animation-name: one4;
+   animation-duration: 12s;
+   z-index: 1;
+    margin-top: -100px;
+   
+
+    }
+    @keyframes one4 {
+    from{
+        transform: translatey(0px);
+       }
+       to{
+        transform: translatey(-550px);
+       }
+} */
+   #one5{
+        width: 60px;
+    background-color: pink;
+    height: 60px;
+   
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+   
+   animation-name: one5;
+   animation-duration: 15s;
+   z-index: 1;
+    margin-top: -100px;
+    margin-left: 20vw;
+
+    }
+    @keyframes one5 {
+    from{
+        transform: translatey(0px);
+       }
+       to{
+        transform: translatey(-550px);
+       }
+}
+   #one6{
+        width: 100px;
+    background-color: orange;
+    height: 100px;
+    border-radius: 70%;
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+     margin-left: 25vw;
+   animation-name: one6;
+   animation-duration: 15s;
+   z-index: 1;
+   margin-top: -250px;
+   
+
+    }
+    @keyframes one6 {
+    from{
+        transform: translatey(0px);
+       }
+       to{
+        transform: translatey(-550px);
+       }
+}
+ /* #one7{
+        width: 100px;
+    background-color: cornflowerblue;
+    height: 100px;
+    border-radius: 50%;
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+     margin-left: 40vw;
+   animation-name: one7;
+   animation-duration: 15s;
+   z-index: 1;
+   margin-top: -250px;
+
+    }
+    @keyframes one7 {
+    from{
+        transform: translatey(0px);
+       }
+       to{
+        transform: translatey(-550px);
+       }
+} */
+ #one8{
+        width: 100px;
+    background-color: purple;
+    height: 100px;
+    border-radius: 50%;
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+     margin-left: 60vw;
+   animation-name: one8;
+   animation-duration: 15s;
+   z-index: 1;
+    margin-top: -250px;
+   
+
+    }
+    @keyframes one8 {
+    from{
+        transform: translatey(0px);
+       }
+       to{
+        transform: translatey(-550px);
+       }
+}
+ #one9{
+        width: 100px;
+    background-color: violet;
+    height: 100px;
+    border-radius: 50%;
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+     margin-left: 80vw;
+   animation-name: one9;
+   animation-duration: 15s;
+   z-index: 1;
+    margin-top: -250px;
+   
+    }
+    @keyframes one9 {
+    from{
+        transform: translatey(0px);
+       }
+       to{
+        transform: translatey(-550px);
+       }
+}
+ #one10{
+        width: 100px;
+    background-color: white;
+    height: 100px;
+  
+     animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+     margin-left: 100vw;
+   animation-name: one10;
+   animation-duration: 15s;
+   z-index: 1;
+      margin-top: -250px;
+   
+    }
+    @keyframes one10 {
+    from{
+        transform: translatey(0px);
+       }
+       to{
+        transform: translatey(-550px);
+       }
+}
+ </style>
+</head>
+<body> <br><br><br><br><br><br>
+   
+    <div class="container.fluid ">
+            <div class="row">
+            <div class="text-center">
+            <div class="mx-auto divone shadow">
+             <div class="col-lg-12 ">
+                <div>
+                    <marquee behavior="" direction="right" class="pt-4"><i>Welcome to the official grading page</i> </marquee>
+                 </div>
+                 <div class="text-dark text-decoration-underline pt-3 pb-3"><h2>WAEC GRADING SCALE</h2> </div>
+                 <div >
+                <input type="text" placeholder="Enter your score" id="input1">
+                <button onclick="checkgrade()">Check</button>
+            </div>
+            <div class="container pt-4">
+                <div id="showGrade" class="mx-auto">Check results here</div>
+            </div>
+                    
+                </div>
+                
+        </div> 
+         <div class="" id="one2">
+     
+         </div>
+       
+          <div class="container-fluid" id="one3">
+
+ 
+        </div>
+         <div class="container" id="one4">
+
+ 
+        </div>
+        <div class="container" id="one5">
+
+ 
+        </div>
+          <div class="container" id="one6">
+
+ 
+        </div>
+        </div>  <div class="container" id="one7">
+
+ 
+        </div>
+        </div>  <div class="container" id="one8">
+
+ 
+        </div>
+        </div>  <div class="container" id="one9">
+
+ 
+        </div>
+        </div>  <div class="container" id="one10">
+
+ 
+        </div> 
+        </div>  <div class="container" id="one11">
+
+ 
+        </div> 
+         <script>
+             function checkgrade(){
+             var grade =   document.getElementById("input1");
+             var gradescore = grade.value;
+             var songA1 = new Audio("audio/Excellent.mp3");
+             var songA2 = new Audio("audio/very good.mp3");  
+             var songA3 = new Audio("audio/good.mp3");
+             var songA4 = new Audio("audio/average.mp3");
+             var songA5 = new Audio("audio/pass.mp3");
+             var songA6 = new Audio("audio/pass.mp3");
+             var songA7 = new Audio("audio/invalid.mp3");
+             
+             if(gradescore>=80 && gradescore<=100){
+                  showGrade.innerHTML = "Excellent-A1"
+                  showGrade.style.color ="green"
+                  grade.value=""
+                  songA1.play();
+             }else if(gradescore>=75 && gradescore<80){
+                  showGrade.innerHTML = "Very Good-B2"
+                  showGrade.style.color ="green"
+                  grade.value=""
+                  songA2.play();
+             }else if(gradescore>=70 && gradescore<75){
+                  showGrade.innerHTML = "Good-B3"
+                  showGrade.style.color ="green"
+                  grade.value=""
+                  songA3.play();
+             }else if(gradescore>=65 && gradescore<70){
+                  showGrade.innerHTML = "Credit-C4"
+                  showGrade.style.color ="blue"
+                  grade.value=""
+                  songA4.play();
+             } else if(gradescore>=60 && gradescore<65){
+                  showGrade.innerHTML = "Credit-C5 "
+                  grade.value=""
+                  showGrade.style.color ="blue"
+                  songA4.play();
+             } else if(gradescore>=50 && gradescore<60){
+                  showGrade.innerHTML = "Credit-C6"
+                  showGrade.style.color ="blue"
+                  songA4.play();
+             }else if(gradescore>=45 && gradescore<50){
+                  showGrade.innerHTML = "D7-Pass"
+                  grade.value=""
+                  showGrade.style.color ="yellow"
+                   songA5.play();
+            }else if(gradescore>=40 && gradescore<45){
+                  showGrade.innerHTML = "E8-Pass"
+                  grade.value=""
+                  showGrade.style.color ="yellow"
+                  songA5.play();
+            }else if(gradescore>=0 && gradescore<40){
+                  showGrade.innerHTML = "F9-Fail"
+                  grade.value=""
+                  showGrade.style.color ="red"
+                  songA6.play();
+            }else if(gradescore<0 || gradescore>100){
+                showGrade.innerHTML = "Invalid Number"
+                  grade.value=""
+                  showGrade.style.color ="black"
+                  songA7.play();
+            }
+        }
+         </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
